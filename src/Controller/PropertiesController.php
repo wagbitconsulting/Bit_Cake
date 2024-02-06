@@ -22,7 +22,7 @@ class PropertiesController extends AppController
         
         $keyword = $this->request->getQuery('keyword');
         $conditions = [];
-        if (!empty($keywork)) {
+        if (!empty($keyword)) {
             $conditions[] = ['OR' => [
                 'title LIKE' => '%' . $keyword . '%',
                 'description LIKE' => '%' . $keyword . '%',
